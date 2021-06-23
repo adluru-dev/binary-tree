@@ -1,17 +1,11 @@
 public class Node {
   int key;
-  String name;
-  
   Node leftChild;
   Node rightChild;
   
-  Node(int key, String name) {
+  Node(int key) {
     this.key = key;
-    this.name = name;
+    leftChild = null;
+    rightChild = null;
   }
-  
-  public String toString() {
-    return key + "|" + name;
-  }
-  
 }
